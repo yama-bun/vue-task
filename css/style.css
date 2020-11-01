@@ -1,0 +1,51 @@
+body {
+    width: 960px;
+    margin: 30px auto;
+    background-color: white;
+    font-family: serif;
+}
+.todo {
+    background-color: skyblue;
+    padding: 50px;
+    border-radius: 30px;
+}
+h1 {
+    color: white;
+}
+li {
+    background-color: white;
+    margin-bottom: 5px;
+    width: 10em;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+input[type="text"], button {
+    width: 14em;
+    padding: 10px;
+    border-radius: 30px;
+}
+button {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.list-complete-item {
+    transition: all .3s;
+}
+.list-complete-enter, .list-complete-leave-to {
+    opacity: 0;
+    transform: translateX(-110%);
+}
+.list-complete-leave-active {
+    position: absolute;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
